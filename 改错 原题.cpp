@@ -1,7 +1,7 @@
-#include <stdio.h>
+ï»¿#include <stdio.h>
 int main(){
 	int x=2.2;
-	printf(¡°xµÄÖµ£º%d\n¡±,x);
+	printf(â€œxçš„å€¼ï¼š%d\nâ€,x);
 	system("pause");
 	return 0;
 } 
