@@ -14,7 +14,18 @@ int main(void)
 }
 void Function(float x,float y,float z,float p,float q,float t)
 {
+	if((x*q==p*y && x*t!=p*z) || (x*q==p*y && y*t!=q*z))
+	{
+		printf("The equations has no solution.\n");
+	}
+	else if((x*q==p*y && x*t==p*z) || (x*q==p*y && y*t==q*z))
+	{
+		printf("The equations has countless solutions.\n");
+	}
+	else
+	{
     printf("The solution of equation is\n");
 	printf("X=%f\n",(x*t-z*q)/(x*q-y*p));
 	printf("Y=%f\n",(x*t-z*p)/(y*p-x*q));
+    }
 }
