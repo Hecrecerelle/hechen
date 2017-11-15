@@ -16,12 +16,17 @@ int main()
                 break;
             }
         }
+        if(c==0)
+        {
+            o++;
+        }
         for(j=2;j<a;j++)
         {
             l=a%j;
             if(l==0)
             {
                 o++;
+                break;
             }
 
         }
@@ -31,14 +36,16 @@ int main()
             if(k==0)
             {
                 o++;
+                break;
             }
         }
         for(s=2;s<d;s++)
         {
             m=d%s;
-            if(m=0)
+            if(m==0)
             {
                 o++;
+                break;
             }
         }
             if(o==0)
